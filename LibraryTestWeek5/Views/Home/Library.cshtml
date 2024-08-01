@@ -32,7 +32,8 @@
             <td>
                 @Html.ActionLink("עריכה", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("מחיקה", "Delete", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("הוסף מדף", "AddShelf", new { id=item.Id })
+                @Html.ActionLink("הוסף מדף", "AddShelf", new { id = item.Id }) |
+                @Html.ActionLink(" הצג מדפים", "Shelves", new { id = item.Id })
             </td>
         </tr>
 }

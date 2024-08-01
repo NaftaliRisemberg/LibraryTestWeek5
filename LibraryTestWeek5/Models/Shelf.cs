@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LibraryTestWeek5.Models
 {
@@ -18,6 +19,9 @@ namespace LibraryTestWeek5.Models
 
         [Display(Name = "שם")]
         public string? Name { get; set; }
+
+        [NotMapped]
+        public int LibId { get; set; }
     }
 }
  

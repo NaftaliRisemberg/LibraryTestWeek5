@@ -14,7 +14,12 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
 
-                <input asp-for="Id" hidden="hidden" />
+                <input asp-for="Id" hidden="hidden"/>
+
+            </div>
+            <div class="form-group">
+
+                <input asp-for="LibId" hidden="hidden" value="@ViewBag.id" />
 
             </div>
             <div class="form-group">

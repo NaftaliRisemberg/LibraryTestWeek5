@@ -22,15 +22,19 @@ namespace LibraryTestWeek5.DAL
 
             Library firstLibrary = new Library();
             firstLibrary.Genre = "חסידות";
-            Shelf s = new Shelf();
+            
+            Shelf s = new Shelf(); 
             s.Width = 25;
             s.Height = 25;
             s.Library = firstLibrary;
             s.Name = "a1";
+            s.LibId = 1;
             Book b = new Book();
             b.Title = "Balh";
             b.Shelf = s;
             b.Library = firstLibrary;
+            b.Height = 25;
+            b.Width = 25;
             libraries.Add(firstLibrary);
             shelves.Add(s);
             books.Add(b);
